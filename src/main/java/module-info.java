@@ -4,6 +4,7 @@ module org.example.tpfinal {
     requires de.jensd.fx.glyphs.fontawesome;
    /// requires java.sql;
     requires org.xerial.sqlitejdbc;
+    requires java.desktop;
     opens org.example.TableTracker to javafx.fxml;
     exports org.example.TableTracker;
     exports org.example.TableTracker.Controllers;
