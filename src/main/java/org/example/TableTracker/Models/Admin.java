@@ -2,8 +2,8 @@ package org.example.TableTracker.Models;
 
 public class Admin extends Usuario {
 
-    public Admin(Login login, String nombreApellido, String dni) {
-        super(login, nombreApellido, dni);
+    public Admin(String usuario,String contrasenia, String nombreApellido, String dni) {
+        super(usuario,contrasenia, nombreApellido, dni);
     }
 
     public void gestionarMesas() {

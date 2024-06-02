@@ -6,8 +6,8 @@ import java.util.ArrayList;
 public class Mesero extends Usuario {
     private List<Mesa> listaMesasAsignadas;
 
-    public Mesero(Login login, String nombreApellido, String dni) {
-        super(login, nombreApellido, dni);
+    public Mesero(String usuario, String contrasenia, String nombreApellido, String dni) {
+        super(usuario,contrasenia, nombreApellido, dni);
         this.listaMesasAsignadas = new ArrayList<>();
     }
 

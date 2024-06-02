@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.TableTracker.Controllers.Mesas.MesaController">
    <children>
       <Label fx:id="lblMesas" alignment="CENTER" layoutX="286.0" layoutY="6.0" text="Mesas">

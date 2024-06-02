@@ -1,25 +1,28 @@
 package org.example.TableTracker.Models;
 
+import java.util.Objects;
+
 public abstract class Usuario {
-    protected Login login;
+    protected String usuario;
+    protected String contrasenia;
     protected String nombreApellido;
     protected String dni;
 
-    public Usuario(Login login, String nombreApellido, String dni) {
-        this.login = login;
+    public Usuario(String nombreUsuario, String contraseña, String nombreApellido, String dni) {
         this.nombreApellido = nombreApellido;
         this.dni = dni;
     }
 
-    public void login(String username, String password) {
-        if (login.validarUsuario(username, password)) {
-            System.out.println("Login exitoso.");
-        } else {
-            System.out.println("Credenciales incorrectas.");
-        }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Usuario usuario1 = (Usuario) o;
+        return Objects.equals(usuario, usuario1.usuario) && Objects.equals(contrasenia, usuario1.contrasenia) && Objects.equals(nombreApellido, usuario1.nombreApellido) && Objects.equals(dni, usuario1.dni);
     }
 
-    public void logout() {
-        System.out.println("Logout exitoso.");
+    @Override
+    public int hashCode() {
+        return Objects.hash(usuario, contrasenia, nombreApellido, dni);
     }
 }
