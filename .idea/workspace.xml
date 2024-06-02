@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5319557-6af2-40d6-990e-944a1794ea38" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Mesa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Mesero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Controllers/Mesa/MesaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/EstadoMesa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Factura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Pedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Plato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/TipoDePlato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxmls/Mesas/Mesas.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Mesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Mesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Model.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxmls/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxmls/Login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -31,6 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lucreciam&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/alvaroatue/TpFinal.git&quot;,
+    &quot;accountId&quot;: &quot;4d927ddb-52e7-405b-b284-c4e9344e71d2&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -47,22 +62,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.TableTracker.App" />
       <module name="TpFinal" />
+      <option name="VM_PARAMETERS" value=" --module-path &quot;C:\Users\Lucrecia\Desktop\javafx-sdk-22.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml&#10; &#10; &#10; --module-path &quot;\path\to\javafx-sdk-22.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml&#10; &#10;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

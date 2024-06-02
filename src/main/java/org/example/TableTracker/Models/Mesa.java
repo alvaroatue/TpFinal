@@ -3,7 +3,7 @@ package org.example.TableTracker.Models;
 public class Mesa {
     private int numero;
     private boolean disponible;
-    public Mesa(int numero) {
+    public Mesa(String number, int numero, EstadoMesa disponible) {
         this.numero = numero;
         this.disponible=true;
     }

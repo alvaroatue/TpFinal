@@ -1,4 +1,4 @@
 package org.example.TableTracker.Models;
 
-public class Model {
+public class Factura {
 }
