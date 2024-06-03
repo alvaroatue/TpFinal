@@ -1,25 +1,43 @@
 package org.example.TableTracker.Models;
 
 public abstract class Usuario {
-    protected Login login;
-    protected String nombreApellido;
-    protected String dni;
+    private String username;
+    private String password;
+    private final String dni;
+    private String nombreCompleto;
 
-    public Usuario(Login login, String nombreApellido, String dni) {
-        this.login = login;
-        this.nombreApellido = nombreApellido;
+    public Usuario(String username, String password, String nombreCompleto, String dni) {
+        this.username = username;
+        this.password = password;
+        this.nombreCompleto = nombreCompleto;
         this.dni = dni;
     }
 
-    public void login(String username, String password) {
-        if (login.validarUsuario(username, password)) {
-            System.out.println("Login exitoso.");
-        } else {
-            System.out.println("Credenciales incorrectas.");
-        }
+    public String getUsername() {
+        return username;
     }
 
-    public void logout() {
-        System.out.println("Logout exitoso.");
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getNombreCompleto() {
+        return nombreCompleto;
+    }
+
+    public void setNombreCompleto(String nombreCompleto) {
+        this.nombreCompleto = nombreCompleto;
+    }
+
+    public String getDni() {
+        return dni;
     }
 }

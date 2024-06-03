@@ -4,23 +4,30 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Mesero extends Usuario {
+
     private List<Mesa> listaMesasAsignadas;
 
-    public Mesero(Login login, String nombreApellido, String dni) {
-        super(login, nombreApellido, dni);
-        this.listaMesasAsignadas = new ArrayList<>();
-    }
-
-    public void asignarMesa(Mesa mesa) {
-        listaMesasAsignadas.add(mesa);
-        System.out.println("Mesa asignada.");
-    }
-
-    public void tomarPedido() {
-        System.out.println("Tomando pedido.");
+    public Mesero(String username, String password, String nombreApellido, String dni) {
+        super(username, password, nombreApellido, dni);
+        this.listaMesasAsignadas = new ArrayList<Mesa>();
     }
 
     public List<Mesa> getListaMesasAsignadas() {
         return listaMesasAsignadas;
+    }
+
+    public void setListaMesasAsignadas(List<Mesa> listaMesasAsignadas) {
+        this.listaMesasAsignadas = listaMesasAsignadas;
+    }
+
+    public void agregarMesa(Mesa mesa) {
+        listaMesasAsignadas.add(mesa);
+    }
+
+    @Override
+    public String toString() {
+        return "Mesero{" +
+                "listaMesasAsignadas=" + listaMesasAsignadas +
+                '}';
     }
 }

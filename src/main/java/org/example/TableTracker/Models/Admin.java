@@ -2,23 +2,12 @@ package org.example.TableTracker.Models;
 
 public class Admin extends Usuario {
 
-    public Admin(Login login, String nombreApellido, String dni) {
-        super(login, nombreApellido, dni);
+    public Admin(String username, String password, String nombreCompleto, String dni) {
+        super(username, password, nombreCompleto, dni);
     }
 
-    public void gestionarMesas() {
-        System.out.println("Gestionando mesas.");
-    }
-
-    public void gestionarMenu() {
-        System.out.println("Gestionando menú.");
-    }
-
-    public void verHistorial() {
-        System.out.println("Viendo historial.");
-    }
-
-    public void gestionarMeseros() {
-        System.out.println("Gestionando meseros.");
+    @Override
+    public String toString() {
+        return "Admin";
     }
 }
