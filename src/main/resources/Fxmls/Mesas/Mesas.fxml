@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.TableTracker.Controllers.Mesas.MesaController">
+   <children>
+      <Label fx:id="lblMesas" alignment="CENTER" layoutX="286.0" layoutY="6.0" text="Mesas">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMesa1" layoutX="67.0" layoutY="93.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="1" />
+      <Button fx:id="btnMesa2" layoutX="67.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="2" />
+      <Button fx:id="btnMesa3" layoutX="67.0" layoutY="241.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="3" />
+      <Button fx:id="btnMesa4" layoutX="275.0" layoutY="93.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="4" />
+      <Button fx:id="btnMesa5" layoutX="275.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="5" />
+      <Button fx:id="btnMesa6" layoutX="275.0" layoutY="241.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="6" />
+      <Button fx:id="btnMesa7" layoutX="486.0" layoutY="93.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="7" />
+      <Button fx:id="btnMesa9" layoutX="486.0" layoutY="241.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="9" />
+      <Button fx:id="btnMesa8" layoutX="486.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="8" />
+   </children>
+</AnchorPane>

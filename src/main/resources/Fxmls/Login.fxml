@@ -40,8 +40,8 @@
                     </font>
                 </Button>
                 <Label fx:id="lblInvalidlogin" alignment="CENTER" layoutX="24.0" layoutY="234.0" prefHeight="17.0" prefWidth="246.0" text="Invalid login. Please try again." />
-                <Label layoutX="18.0" layoutY="14.0" text="Choose your account type:" />
-                <ChoiceBox layoutX="18.0" layoutY="31.0" prefWidth="150.0" />
+                <Label fx:id="lblChooseAcc" layoutX="18.0" layoutY="14.0" text="Choose your account type:" />
+                <ChoiceBox fx:id="ChoiceBox" layoutX="18.0" layoutY="31.0" prefWidth="150.0" />
             </children></AnchorPane>
     </right>
 </BorderPane>
