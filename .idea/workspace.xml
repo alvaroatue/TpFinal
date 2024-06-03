@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5319557-6af2-40d6-990e-944a1794ea38" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Controllers/Mesa/MesaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/EstadoMesa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Factura.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Pedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Plato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/TipoDePlato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxmls/Mesas/Mesas.fxml" afterDir="false" />
+    <list default="true" id="d5319557-6af2-40d6-990e-944a1794ea38" name="Changes" comment="clases">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxmls/Mesas/Pedido.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Mesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Mesa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Model.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxmls/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxmls/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Controllers/Admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Controllers/Admin/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxmls/Admin/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxmls/Admin/Admin.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -62,19 +57,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "lucre",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.5862069",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.TableTracker.App" />
@@ -95,5 +90,32 @@
       <updated>1717175082404</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="lucre" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="clases" />
+    <option name="LAST_COMMIT_MESSAGE" value="clases" />
   </component>
 </project>
