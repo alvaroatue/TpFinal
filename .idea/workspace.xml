@@ -6,13 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d5319557-6af2-40d6-990e-944a1794ea38" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Mesero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Mesero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Fxmls/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxmls/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxmls/Mesas/Mesas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxmls/Mesas/Mesas.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,20 +52,28 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.JavaFX"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.TableTracker.App" />
       <module name="TpFinal" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Alvaro\OneDrive\Desktop\javafx-sdk-22.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,5 +85,21 @@
       <updated>1717175082404</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Mesa.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/TableTracker/Models/Mesa.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

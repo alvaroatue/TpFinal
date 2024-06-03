@@ -1,25 +1,33 @@
 package org.example.TableTracker.Controllers;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Label;
-import javafx.event.ActionEvent;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
+import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
+import org.example.TableTracker.Models.Admin;
+import org.example.TableTracker.Models.Mesero;
 import org.example.TableTracker.Models.Usuario;
 
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LoginController {
 
-    private HashSet <Usuario> users = new HashSet<>();
     @FXML
-    private ChoiceBox<String> ChoiceBox;
+    private ImageView logoImage;
+
+    @FXML
+    private Label lblUsername;
 
     @FXML
     private TextField enterUsernameField;
+
+    @FXML
+    private Label lblPassword;
 
     @FXML
     private PasswordField enterPasswordField;
@@ -31,31 +39,73 @@ public class LoginController {
     private Button cancelBtn;
 
     @FXML
-    private Label lblInvalidLogin;
+    private Label lblInvalidlogin;
+
+    @FXML
+    private Label lblChooseAcc;
+
+    @FXML
+    private ChoiceBox<String> ChoiceBox;
+
+    private List<Admin> adminList = new ArrayList<>();
+    private List<Mesero> meseroList = new ArrayList<>();
+
     @FXML
     public void initialize() {
-        // Inicializar el ComboBox con los tipos de cuenta
+        // Add some sample users
+        adminList.add(new Admin("admin1", "adminpass", "Admin Uno", "12345678"));
+        meseroList.add(new Mesero("mesero1", "meseropass", "Mesero Uno", "87654321"));
+
+        // Add account types to ChoiceBox
         ChoiceBox.getItems().addAll("Admin", "Mesero");
+
+        // Hide the invalid login label initially
+        lblInvalidlogin.setVisible(false);
+
+        loginBtn.setOnAction(event -> handleLogin());
+        cancelBtn.setOnAction(event -> handleCancel());
     }
-    public LoginController() {
-        // Agregar usuarios al conjunto
-        users.add(new Usuario("admin","123", "AlvaroAtue", "44576753") {
-        });
-        users.add(new Usuario("mesero", "456", "LucreciaMartin","111111") {
-        });
-    }
-    @FXML
-    private void handleLoginAction(ActionEvent event) {
-        String selectedAccountType = ChoiceBox.getValue();
+
+    private void handleLogin() {
         String username = enterUsernameField.getText();
         String password = enterPasswordField.getText();
+        String accountType = ChoiceBox.getValue();
 
-        if (users.contains()) {
-            showAlert(AlertType.INFORMATION, "Login Successful", "Welcome, " + username + "!");
+        boolean loginSuccessful = false;
+
+        if (accountType.equals("Admin")) {
+            for (Admin admin : adminList) {
+                if (admin.getUsuario().equals(username) && admin.getContrasenia().equals(password)) {
+                    loginSuccessful = true;
+                    // Redirect to admin dashboard
+                    System.out.println("Inicio de sesión exitoso para el Admin: " + admin.getNombreApellido());
+                    break;
+                }
+            }
+        } else if (accountType.equals("Mesero")) {
+            for (Mesero mesero : meseroList) {
+                if (mesero.getUsuario().equals(username) && mesero.getContrasenia().equals(password)) {
+                    loginSuccessful = true;
+                    // Redirect to mesero dashboard
+                    System.out.println("Inicio de sesión exitoso para el Mesero: " + mesero.getNombreApellido());
+                    break;
+                }
+            }
+        }
+
+        if (!loginSuccessful) {
+            lblInvalidlogin.setVisible(true);
         } else {
-            lblInvalidLogin.setText("Invalid login. Please try again.");
+            lblInvalidlogin.setVisible(false);
+            // Close the login window
+            Stage stage = (Stage) loginBtn.getScene().getWindow();
+            stage.close();
         }
     }
 
-
+    private void handleCancel() {
+        // Close the application
+        Stage stage = (Stage) cancelBtn.getScene().getWindow();
+        stage.close();
+    }
 }

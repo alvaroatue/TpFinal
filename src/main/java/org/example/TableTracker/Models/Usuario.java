@@ -13,6 +13,38 @@ public abstract class Usuario {
         this.dni = dni;
     }
 
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getContrasenia() {
+        return contrasenia;
+    }
+
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
+    }
+
+    public String getNombreApellido() {
+        return nombreApellido;
+    }
+
+    public void setNombreApellido(String nombreApellido) {
+        this.nombreApellido = nombreApellido;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -25,4 +57,5 @@ public abstract class Usuario {
     public int hashCode() {
         return Objects.hash(usuario, contrasenia, nombreApellido, dni);
     }
+
 }

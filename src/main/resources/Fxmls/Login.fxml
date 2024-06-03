@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -28,7 +29,6 @@
                 <Label fx:id="lblUsername" layoutX="24.0" layoutY="101.0" text="Username" />
                 <TextField fx:id="enterUsernameField" layoutX="98.0" layoutY="97.0" promptText="Username" />
                 <Label fx:id="lblPassword" layoutX="24.0" layoutY="162.0" text="Password" />
-                <TextField fx:id="enterPasswordField" layoutX="98.0" layoutY="158.0" promptText="Password" />
                 <Button fx:id="loginBtn" layoutX="23.0" layoutY="262.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #E9151;" text="Login">
                     <font>
                         <Font size="13.0" />
@@ -39,9 +39,10 @@
                         <Font size="13.0" />
                     </font>
                 </Button>
-                <Label fx:id="lblInvalidlogin" alignment="CENTER" layoutX="24.0" layoutY="234.0" prefHeight="17.0" prefWidth="246.0" text="Invalid login. Please try again." />
+                <Label fx:id="lblInvalidlogin" alignment="CENTER" layoutX="24.0" layoutY="234.0" prefHeight="17.0" prefWidth="246.0" text="Invalid login. Please try again." visible="false" />
                 <Label fx:id="lblChooseAcc" layoutX="18.0" layoutY="14.0" text="Choose your account type:" />
                 <ChoiceBox fx:id="ChoiceBox" layoutX="18.0" layoutY="31.0" prefWidth="150.0" />
+            <PasswordField fx:id="enterPasswordField" layoutX="98.0" layoutY="158.0" prefHeight="25.0" prefWidth="149.0" promptText="Password" />
             </children></AnchorPane>
     </right>
 </BorderPane>
