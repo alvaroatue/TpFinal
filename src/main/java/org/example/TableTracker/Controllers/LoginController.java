@@ -49,6 +49,11 @@ public class LoginController {
 
     private List<Admin> adminList = new ArrayList<>();
     private List<Mesero> meseroList = new ArrayList<>();
+    protected static Stage stage;
+
+    public void setStage(Stage stage) {
+        this.stage = stage;
+    }
 
     @FXML
     public void initialize() {
@@ -108,4 +113,6 @@ public class LoginController {
         Stage stage = (Stage) cancelBtn.getScene().getWindow();
         stage.close();
     }
+
+
 }
