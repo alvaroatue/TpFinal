@@ -1,4 +1,4 @@
-module org.example.tpfinal {
+module org.example.TpFinal {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.desktop;
